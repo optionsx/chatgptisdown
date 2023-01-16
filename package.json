@@ -1,0 +1,20 @@
+{
+  "name": "chatgptisdown",
+  "version": "1.0.8",
+  "description": "ChatGPT is Down? not problem this takes care of that by reloading until it is up and extracts the session_token! discord: shêr#0196",
+  "main": "./src/index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "optionsx",
+  "license": "MIT",
+  "dependencies": {
+    "chatgptisdown": "^1.0.4",
+    "playwright": "^1.29.2"
+  }
+}
