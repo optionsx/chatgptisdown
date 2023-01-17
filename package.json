@@ -1,8 +1,8 @@
 {
   "name": "chatgptisdown",
-  "version": "1.0.8",
-  "description": "ChatGPT is Down? not problem this takes care of that by reloading until it is up and extracts the session_token! discord: shêr#0196",
-  "main": "index.js",
+  "version": "1.0.10",
+  "description": "ChatGPT is Down? not problem this takes care of that, and extracts the session_token!",
+  "main": "./src/index.js",
   "type": "module",
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
   "author": "optionsx",
   "license": "MIT",
   "dependencies": {
-    "chatgptisdown": "^1.0.8",
+    "chatgptisdown": "^1.0.10",
     "playwright": "^1.29.2"
   }
 }

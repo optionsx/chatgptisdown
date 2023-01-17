@@ -1,6 +1,6 @@
 # chatgptisdown
 
-See if ChatGPT is down.
+wanna bypass chatgpt being down and login and use their service? this is the package for you!
 
 ```js
 import { bypassDowness, getSessionToken } from "chatgptisdown";
