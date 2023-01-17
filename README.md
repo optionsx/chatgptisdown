@@ -2,6 +2,14 @@
 
 wanna bypass chatgpt being down and login and use their service? this is the package for you!
 
+## Installation
+
+```bash
+npm i chatgptisdown
+```
+
+## Example
+
 ```js
 import { bypassDowness, getSessionToken } from "chatgptisdown";
 
@@ -11,3 +19,16 @@ await getSessionToken(true); // get session token and save it to session_token.t
 ```
 
 ![POC](https://i.imgur.com/XYYWdJM.gif)
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+## Disclaimer
+
+```txt
+This is for educational purposes only. I am not responsible for any misuse of this package.
+I am not affiliated with chatgpt in any way.
+This package is not meant to be used for malicious purposes.
+This package is not meant to be used for bypassing any security measures.
+```
