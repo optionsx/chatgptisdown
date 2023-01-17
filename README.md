@@ -1,6 +1,6 @@
 # chatgptisdown
 
-wanna bypass/access chatgpt being down and login/register and use their service? this is the package for you!
+wanna bypass/access chatgpt while it's down and then login/register to use their service? this is the package for you!
 
 ## Installation
 
