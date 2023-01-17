@@ -30,5 +30,4 @@ await getSessionToken(true); // get session token and save it to session_token.t
 This is for educational purposes only. I am not responsible for any misuse of this package.
 I am not affiliated with chatgpt in any way.
 This package is not meant to be used for malicious purposes.
-This package is not meant to be used for bypassing any security measures.
 ```
