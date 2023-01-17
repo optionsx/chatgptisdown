@@ -13,9 +13,9 @@ npm i chatgptisdown
 ```js
 import { bypassDowness, getSessionToken } from "chatgptisdown";
 
-await bypassDowness(10); // wait for login page to load, that is 10 milliseconds wait before trying to reload page
+await bypassDowness(10); // 10 millisecond between reloads, by default it's 0
 
-await getSessionToken(true); // get session token and save it to session_token.txt, true to close the browser after getting the token, false to keep it open
+await getSessionToken(true); // saves it to session_token.txt afterwards, true to close the browser, by default it's false
 ```
 
 ![POC](https://i.imgur.com/XYYWdJM.gif)
