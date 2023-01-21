@@ -4,7 +4,7 @@ const browser = await firefox.launch({ headless: false });
 const context = await browser.newContext();
 const page = await context.newPage();
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-export async function bypassDowness(timeOutBetweenPageLoad = 0) {
+export async function AccessChatGPT({ timeout = 0 }) {
   try {
     let isCfpassed = false;
     while (true) {
@@ -27,7 +27,7 @@ export async function bypassDowness(timeOutBetweenPageLoad = 0) {
         // check if cf_clearance cookie exists
         cfClearance ? (isCfpassed = true) : (isCfpassed = false);
       }
-      await sleep(isCfpassed ? timeOutBetweenPageLoad : 2000); // wait 2000 when
+      await sleep(isCfpassed ? timeout : 2000);
       if (await page.$('text="Log in"')) {
         console.log("Found login page");
         break;
@@ -38,21 +38,17 @@ export async function bypassDowness(timeOutBetweenPageLoad = 0) {
   }
 }
 // todo: get session token
-export const getSessionToken = async (closeBrowser = false) => {
+export const getSessionToken = async ({ closeBrowser = false }) => {
   const session_interval = setInterval(async () => {
     let cookies = await page.context().cookies();
     let cookie = cookies.find(
       (c) => c.name === "__Secure-next-auth.session-token"
     );
-    if (!cookie) {
-      console.log("session_token not found, login to get it");
-      return;
-    }
-    clearInterval(session_interval);
-    writeFileSync("session_token.txt", cookie.value);
-    console.log(
-      "session_token found, saved to session_token.txt\nyou may close browser now"
-    );
-    if (closeBrowser) await browser.close();
+    cookie
+      ? (console.log("session_token found"),
+        clearInterval(session_interval),
+        writeFileSync("session_token.txt", cookie.value))
+      : console.log("session_token found, saved to session_token.txt");
+    if (closeBrowser && cookie) await browser.close();
   }, 5000); // check every 5 seconds
 };
