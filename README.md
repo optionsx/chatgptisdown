@@ -1,5 +1,5 @@
 # chatgptisdown
-[![npm version](https://badge.fury.io/js/chatgptisdown.svg)](https://badge.fury.io/js/chatgptisdown) [![npm downloads](https://img.shields.io/npm/dt/chatgptisdown)](https://www.npmjs.com/package/chatgptisdown) [![GitHub license](https://img.shields.io/github/license/optionsx/chatgptisdown)](
+[![npm version](https://badge.fury.io/js/chatgptisdown.svg)](https://badge.fury.io/js/chatgptisdown) [![npm downloads](https://img.shields.io/npm/dt/chatgptisdown)](https://www.npmjs.com/package/chatgptisdown) [![GitHub license](https://img.shields.io/github/license/optionsx/chatgptisdown)]
 
 wanna bypass/access chatgpt while it's down and then login/register to use their service? this is the package for you!
 discord:shêr#0196
