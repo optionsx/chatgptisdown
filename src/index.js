@@ -45,10 +45,10 @@ export const getSessionToken = async ({ closeBrowser = false }) => {
       (c) => c.name === "__Secure-next-auth.session-token"
     );
     cookie
-      ? (console.log("session_token found"),
+      ? (console.log("session_token found, saved to session_token.txt"),
         clearInterval(session_interval),
         writeFileSync("session_token.txt", cookie.value))
-      : console.log("session_token found, saved to session_token.txt");
+      : console.log("session_token not found yet, login to get it");
     if (closeBrowser && cookie) await browser.close();
   }, 5000); // check every 5 seconds
 };
