@@ -14,9 +14,9 @@ npm i chatgptisdown
 ```js
 import { AccessChatGPT, getSessionToken } from "chatgptisdown";
 
-await AccessChatGPT(10); // 10 millisecond between reloads, by default it's 0
+await AccessChatGPT({timeout = 300}); // , by default it's 0
 
-await getSessionToken(true); // saves it to session_token.txt afterwards, true to close the browser, by default it's false
+await getSessionToken({ closeBrowser = false }); // saves it to session_token.txt afterwards, by default it's false
 ```
 
 ![POC](https://i.imgur.com/XYYWdJM.gif)
