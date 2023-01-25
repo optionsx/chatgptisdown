@@ -12,9 +12,9 @@ npm i chatgptisdown
 ## Example
 
 ```js
-import { bypassDowness, getSessionToken } from "chatgptisdown";
+import { AccessChatGPT, getSessionToken } from "chatgptisdown";
 
-await bypassDowness(10); // 10 millisecond between reloads, by default it's 0
+await AccessChatGPT(10); // 10 millisecond between reloads, by default it's 0
 
 await getSessionToken(true); // saves it to session_token.txt afterwards, true to close the browser, by default it's false
 ```

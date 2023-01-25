@@ -19,6 +19,6 @@
   "license": "MIT",
   "dependencies": {
     "chatgptisdown": "^1.0.10",
-    "playwright": "^1.29.2"
+    "playwright": "^1.30.0"
   }
 }
