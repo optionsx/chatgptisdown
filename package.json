@@ -1,6 +1,6 @@
 {
   "name": "chatgptisdown",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "ChatGPT is Down? not problem this takes care of that, and extracts the session_token!",
   "main": "./src/index.js",
   "type": "module",
